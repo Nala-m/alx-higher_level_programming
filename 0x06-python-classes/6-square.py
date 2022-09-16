@@ -30,7 +30,7 @@ class Square:
     def size(self, value):
         """Sets the size value
         Args:
-        value: the size of the square
+            value: the size of the square
         """
 
         if type(value) is int:
@@ -45,7 +45,7 @@ class Square:
     def position(self, value):
         """Sets the position value
         Args:
-        value: the position
+            value: the position
         """
         if (type(value) != tuple or len(value) != 2):
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -69,13 +69,13 @@ class Square:
             return
 
         if self.__position[1] > 0:
-            for i in range(self.__position[i]):
+            for i in range(self.__position[1]):
                 print()
 
         for i in range(self.__size):
-            if self.__position(0) > 0:
+            if self.__position[0] > 0:
                 for i in range(self.__position[0]):
-                    print(" ", ends='')
+                    print(" ", end='')
             for j in range(self.__size):
-                print("#", ends='')
+                print("#", end='')
             print("")
