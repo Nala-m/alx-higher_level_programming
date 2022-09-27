@@ -3,13 +3,15 @@
 
 
 def read_file(filename=""):
-    """Reads a text file (UTF8) and prints it to stdout
-    Args:
-        filename: the file to read
-    """
+    """Function that reads from a file
 
-    with open(filename, encoding='utf-8') as f:
-        for line in f:
-            print(line, end="")
+    Args:
+        filename: filename
+    Raises:
+        Exception: when the file can be opened
+    """
+    with open(filename, 'r', encoding="utf-8") as f:
+        print(read_data, end='')
+
 
 
