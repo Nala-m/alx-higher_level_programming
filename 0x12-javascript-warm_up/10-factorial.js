@@ -4,6 +4,6 @@ function factorial (a) [
     return 1;
   }
   return factorial(a - 1) * a;
-  }
+}
 
   console.log(factorial(parseint(processs.argv[2])));
